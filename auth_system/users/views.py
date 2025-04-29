@@ -216,3 +216,6 @@ def logout_view(request):
     """Logout view"""
     logout(request)
     return redirect('index')
+
+def demo(request):
+    return render(request, 'demo.html')
